@@ -3,63 +3,389 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Carvalho Bernardo - Portfólio</title>
+    <title>Ryan Carvalho - Portfólio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation { animation: float 4s ease-in-out infinite; }
+        
+        /* Cores personalizadas */
+        .bg-primary { background: #0f172a; }
+        .bg-secondary { background: #1e293b; }
+        .text-primary { color: #38bdf8; }
+        .hover\:text-primary:hover { color: #7dd3fc; }
+    </style>
 </head>
-<body class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
-    <header class="p-6 bg-gray-700 text-center text-3xl font-bold animate-fade-in">
-        Ryan Carvalho Bernardo
+<body class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 min-h-screen">
+    <header class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-sm py-4 shadow-xl">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <span class="text-2xl font-bold bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
+                RYAN
+            </span>
+            <div class="flex gap-6 text-gray-300">
+                <a href="#about" class="hover:text-teal-400 transition-colors">Sobre</a>
+                <a href="#skills" class="hover:text-teal-400 transition-colors">Habilidades</a>
+                <a href="#projects" class="hover:text-teal-400 transition-colors">Projetos</a>
+                <a href="#contact" class="hover:text-teal-400 transition-colors">Contato</a>
+            </div>
+        </nav>
     </header>
-    
-    <section class="p-6 text-center animate-slide-in">
-        <img src="imagens/perfil.jpeg" alt="Foto de Perfil" class="mx-auto rounded-full w-32 h-32 border-4 border-gray-600 shadow-lg">
-        <h2 class="text-xl font-semibold mt-4">Sobre Mim</h2>
-        <p>Desenvolvedor FullStack</p>
-        <p class="mt-2 text-gray-300">
-            Sou apaixonado por programação e tecnologia! Gosto de desenvolver em Java e explorar novas tecnologias. Formado como Técnico em Desenvolvimento de Sistemas, atualmente curso Engenharia da Computação no SENAI CIMATEC.
-        </p>
-    </section>
-    
-    <section class="p-6 animate-fade-in">
-        <h2 class="text-xl font-semibold text-center">Habilidades</h2>
-        <div class="mt-4 flex flex-wrap justify-center gap-4">
-            <span class="px-4 py-2 bg-blue-600 rounded flex items-center gap-2"><i class="fab fa-java"></i> Java Spring</span>
-            <span class="px-4 py-2 bg-teal-600 rounded flex items-center gap-2"><i class="fab fa-react"></i> React</span>
-            <span class="px-4 py-2 bg-yellow-600 rounded flex items-center gap-2"><i class="fas fa-database"></i> MySQL</span>
-            <span class="px-4 py-2 bg-green-600 rounded flex items-center gap-2"><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
-        </div>
-    </section>
-    
-    <section class="p-6 text-center animate-slide-in">
-        <h2 class="text-xl font-semibold">Projetos</h2>
-        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="p-4 bg-gray-700 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                <img src="https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?t=st=1741653893~exp=1741657493~hmac=addca2e0c57d6c9af7b749d75806ff2c6bd545d2283a961ea75147ac81a0baa4&w=1380" alt="GoChat4Life" class="rounded-lg w-full">
-                <h3 class="font-bold mt-2">GoChat4Life</h3>
-                <p class="text-gray-300">Aplicação de chat em tempo real utilizando a tecnologia de websocket para a troca de informações em tempo real.</p>
+
+    <main class="container mx-auto px-6 pt-24">
+        <!-- Seção Hero -->
+        <section id="about" class="flex flex-col md:flex-row items-center justify-between py-20" data-aos="fade-up">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl font-bold mb-4 text-gray-100">
+                    Ryan Carvalho
+                    <span class="block text-3xl mt-2 bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
+                        Desenvolvedor FullStack
+                    </span>
+                </h1>
+                <p class="text-gray-400 text-lg mb-8">
+                    Transformando ideias em soluções digitais performáticas e escaláveis
+                </p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="bg-teal-600 hover:bg-teal-700 px-6 py-3 rounded-full transition-colors flex items-center gap-2">
+                        <i class="fas fa-envelope"></i> Contato
+                    </a>
+                    <a href="#projects" class="text-blue-400 border border-teal-600 hover:bg-teal-600/20 px-6 py-3 rounded-full transition-colors">
+                        Ver Projetos
+                    </a>
+                </div>
             </div>
-            <div class="p-4 bg-gray-700 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                <img src="https://img.freepik.com/fotos-premium/tecnologia-da-internet-conceito-de-comercio-eletronico-pessoa-que-usa-computador-portatil-e-telefone-inteligente-com-global_901408-8640.jpg?w=1060" alt="Histórico de Vendas" class="rounded-lg w-full">
-                <h3 class="font-bold mt-2">Histórico de Vendas</h3>
-                <p class="text-gray-300">Sistema de filtragem de vendas por período, utilizando React e MySQL.</p>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="imagens/perfil.jpeg" alt="Ryan" 
+                     class="rounded-full w-72 h-72 border-4 border-teal-500/30 shadow-2xl float-animation">
             </div>
-            <div class="p-4 bg-gray-700 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                <img src="https://img.freepik.com/fotos-gratis/mulher-de-tiro-medio-segurando-tablet_23-2149151168.jpg?t=st=1741653855~exp=1741657455~hmac=e76dd1b60f1e586d92c51c2982db0649ab455185968af13d1c7a72da6e613254&w=1060" alt="Novo Projeto" class="rounded-lg w-full">
-                <h3 class="font-bold mt-2">Novo Projeto</h3>
-                <p class="text-gray-300">Descrição breve do projeto.</p>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="skills" class="py-20" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">Tecnologias que Domino</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- React -->
+                <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                    <i class="fab fa-react text-4xl text-[#61DAFB]"></i>
+                    <h3 class="text-xl my-4 text-gray-100">React JS</h3>
+                    <p class="text-gray-400 text-sm">Desenvolvimento de interfaces modernas e responsivas</p>
+                </div>
+
+                <!-- Java -->
+                <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                    <i class="fab fa-java text-4xl text-[#007396]"></i>
+                    <h3 class="text-xl my-4 text-gray-100">Java Spring</h3>
+                    <p class="text-gray-400 text-sm">APIs robustas e sistemas backend complexos</p>
+                </div>
+
+                <!-- Docker -->
+                <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                    <i class="fab fa-docker text-4xl text-[#2496ED]"></i>
+                    <h3 class="text-xl my-4 text-gray-100">Docker</h3>
+                    <p class="text-gray-400 text-sm">Containerização e orquestração de aplicações</p>
+                </div>
+
+                <!-- MySQL -->
+                <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-database text-4xl text-[#F29111]"></i>
+                    <h3 class="text-xl my-4 text-gray-100">MySQL</h3>
+                    <p class="text-gray-400 text-sm">Modelagem e gestão de bancos relacionais</p>
+                </div>
+
+                <!-- Tailwind -->
+                <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                    <i class="fab fa-css3-alt text-4xl text-[#38BDF8]"></i>
+                    <h3 class="text-xl my-4 text-gray-100">Tailwind CSS</h3>
+                    <p class="text-gray-400 text-sm">Estilização moderna e responsiva</p>
+                </div>
+
+                <!-- Node.js -->
+                <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                    <i class="fab fa-node-js text-4xl text-[#68A063]"></i>
+                    <h3 class="text-xl my-4 text-gray-100">Node.js</h3>
+                    <p class="text-gray-400 text-sm">APIs RESTful e aplicações server-side</p>
+                </div>
+
+                <!-- Git -->
+                <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                    <i class="fab fa-git-alt text-4xl text-[#F05032]"></i>
+                    <h3 class="text-xl my-4 text-gray-100">Git</h3>
+                    <p class="text-gray-400 text-sm">Versionamento e controle de código</p>
+                </div>
+
+                <!-- AWS -->
+                <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                    <i class="fab fa-aws text-4xl text-[#FF9900]"></i>
+                    <h3 class="text-xl my-4 text-gray-100">AWS</h3>
+                    <p class="text-gray-400 text-sm">Cloud Computing e deploy de aplicações</p>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <footer class="p-6 text-center bg-gray-700 animate-fade-in">
-        <p class="mb-4">Entre em contato: <a href="mailto:ryancarvalho.ber@gmail.com" class="text-blue-400">ryancarvalho.ber@gmail.com</a></p>
-        <div class="flex justify-center gap-6 text-2xl">
-            <a href="#" class="text-pink-500 hover:text-pink-400"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/Ryaannsz" class="text-gray-400 hover:text-gray-300"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ryaannsz/" class="text-blue-600 hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-facebook"></i></a>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projects" class="py-20" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">Projetos Recentes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projeto 1 -->
+                <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-48">
+                        <img src="https://source.unsplash.com/random/800x600?code,chat" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Lava-Jato Software</h3>
+                        <p class="text-gray-400 mb-4">Sistema web para gerenciamento de um lava jato com dashboard interativa com os dados.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-teal-600/20 text-teal-400 rounded-full text-sm">Java</span>
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-48">
+                        <img src="https://source.unsplash.com/random/800x600?ecommerce" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Gerenciamento de Vendas</h3>
+                        <p class="text-gray-400 mb-4">Sistema de gerenciamento de estoque e de vendas de uma loja de roupas masculinas.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">MySQL</span>
+                            <span class="px-3 py-1 bg-teal-600/20 text-teal-400 rounded-full text-sm">Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-48">
+                        <img src="https://source.unsplash.com/random/800x600?dashboard" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Sistema de Monitoramento</h3>
+                        <p class="text-gray-400 mb-4">Dashboard de métricas em tempo real</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Spring Boot</span>
+                            <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Projeto 4-->
+                <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-48">
+                        <img src="https://source.unsplash.com/random/800x600?ecommerce" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Manipulação de API</h3>
+                        <p class="text-gray-600 mb-4">Manipulação de uma API pública, filtrando e organizando dados de futebol.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-red-600/20 text-yellow-400 rounded-full text-sm">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Projeto 5-->
+                <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-48">
+                        <img src="https://source.unsplash.com/random/800x600?ecommerce" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Gerador de Ticket</h3>
+                        <p class="text-gray-400 mb-4">Sistema de gerar ticket em tempo real na página.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-600/20 text-blue-400 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-600/20 text-teal-400 rounded-full text-sm">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Projeto 6-->
+                <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-48">
+                        <img src="https://source.unsplash.com/random/800x600?ecommerce" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Calculadora de Idade</h3>
+                        <p class="text-gray-400 mb-4">Sistema para calcular a idade.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">TypeScript</span>
+                            <span class="px-3 py-1 bg-blue-600/20 text-teal-400 rounded-full text-sm">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contact" class="py-20" data-aos="fade-up">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
+                    <h2 class="text-3xl font-bold text-center mb-8 text-gray-100">
+                        <span class="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
+                            Entre em Contato
+                        </span>
+                    </h2>
+                    
+                    <form class="space-y-6" id="contactForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Nome -->
+                            <div class="relative">
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    required
+                                    class="w-full px-4 py-3 bg-gray-700 border-2 border-gray-600 rounded-lg focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30 outline-none transition-all text-gray-100 placeholder-gray-400"
+                                    placeholder=" "
+                                >
+                                <label 
+                                    for="name" 
+                                    class="absolute top-3 left-4 px-1 bg-gray-700 text-gray-400 transition-all duration-200 pointer-events-none"
+                                >
+                                    Nome Completo
+                                </label>
+                                <i class="fas fa-user absolute right-4 top-4 text-gray-400"></i>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="relative">
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    required
+                                    class="w-full px-4 py-3 bg-gray-700 border-2 border-gray-600 rounded-lg focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30 outline-none transition-all text-gray-100 placeholder-gray-400"
+                                    placeholder=" "
+                                >
+                                <label 
+                                    for="email" 
+                                    class="absolute top-3 left-4 px-1 bg-gray-700 text-gray-400 transition-all duration-200 pointer-events-none"
+                                >
+                                    Endereço de Email
+                                </label>
+                                <i class="fas fa-envelope absolute right-4 top-4 text-gray-400"></i>
+                            </div>
+                        </div>
+
+                        <!-- Mensagem -->
+                        <div class="relative">
+                            <textarea 
+                                id="message" 
+                                rows="5" 
+                                required
+                                class="w-full px-4 py-3 bg-gray-700 border-2 border-gray-600 rounded-lg focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30 outline-none transition-all text-gray-100 placeholder-gray-400 resize-none"
+                                placeholder=" "
+                            ></textarea>
+                            <label 
+                                for="message" 
+                                class="absolute top-3 left-4 px-1 bg-gray-700 text-gray-400 transition-all duration-200 pointer-events-none"
+                            >
+                                Sua Mensagem
+                            </label>
+                            <i class="fas fa-comment-dots absolute right-4 top-4 text-gray-400"></i>
+                        </div>
+
+                        <!-- Botão de Envio -->
+                        <button 
+                            type="submit"
+                            class="w-full py-3 bg-gradient-to-r from-teal-600 to-cyan-700 hover:from-teal-500 hover:to-cyan-600 rounded-lg font-semibold text-gray-100 transition-all hover:shadow-lg hover:shadow-teal-500/20"
+                        >
+                            Enviar Mensagem
+                        </button>
+                    </form>
+
+                    <!-- Mensagem de Sucesso (Oculto) -->
+                    <div id="successMessage" class="hidden mt-6 p-4 bg-teal-900/30 border border-teal-500 rounded-lg text-teal-300 text-center">
+                        <i class="fas fa-check-circle text-2xl mb-2"></i>
+                        <p class="font-semibold">Mensagem enviada com sucesso!</p>
+                        <p class="text-sm">Retornarei seu contato em breve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900/80 backdrop-blur-sm py-12" data-aos="fade-up">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center gap-6 mb-8 text-3xl">
+                <a href="https://github.com/Ryaannsz" class="text-gray-400 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ryaannsz/" class="text-gray-400 hover:text-teal-400 transition-colors">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:ryancarvalho.ber@gmail.com" class="text-gray-400 hover:text-teal-400 transition-colors">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <p class="text-gray-400 text-sm">
+                © 2024 Ryan Carvalho. Todos os direitos reservados
+            </p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializa animações ao rolar
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out-quad',
+        });
+
+        // Validação e Animação do Formulário
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envio
+            document.getElementById('successMessage').classList.remove('hidden');
+            this.reset();
+            
+            // Reset após 5 segundos
+            setTimeout(() => {
+                document.getElementById('successMessage').classList.add('hidden');
+            }, 5000);
+        });
+
+        // Anima labels ao focar
+        document.querySelectorAll('input, textarea').forEach(element => {
+            element.addEventListener('focus', () => {
+                const label = element.previousElementSibling;
+                label.style.transform = 'translateY(-24px)';
+                label.style.color = '#2dd4bf';
+            });
+
+            element.addEventListener('blur', () => {
+                const label = element.previousElementSibling;
+                if (!element.value) {
+                    label.style.transform = 'translateY(0)';
+                    label.style.color = '#9ca3af';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
