@@ -8,25 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-
 </head>
 <body class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 min-h-screen">
     <header class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-sm py-4 shadow-xl">
         <nav class="container mx-auto px-6 flex justify-between items-center">
-            <span class="text-2xl font-bold bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
+            <span class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
                 RYAN
             </span>
             
-            
             <div class="hidden md:flex gap-6 text-gray-300">
-                <a href="#about" class="hover:text-teal-400 transition-colors">Sobre</a>
-                <a href="#skills" class="hover:text-teal-400 transition-colors">Habilidades</a>
-                <a href="#projects" class="hover:text-teal-400 transition-colors">Projetos</a>
-                <a href="#contact" class="hover:text-teal-400 transition-colors">Contato</a>
+                <a href="#sobre" class="hover:text-purple-400 transition-colors">Sobre</a>
+                <a href="#tecnologia" class="hover:text-purple-400 transition-colors">Habilidades</a>
+                <a href="#experiencia" class="hover:text-purple-400 transition-colors">Experiência</a>
+                <a href="#projetos" class="hover:text-purple-400 transition-colors">Projetos</a>
+                <a href="#contato" class="hover:text-purple-400 transition-colors">Contato</a>
             </div>
 
-          
-            <button class="hamburger md:hidden p-2 text-gray-300 hover:text-teal-400 transition-colors" 
+            <button class="hamburger md:hidden p-2 text-gray-300 hover:text-purple-400 transition-colors" 
                     onclick="toggleMenu()">
                 <span class="block w-6 h-0.5 bg-current mb-1"></span>
                 <span class="block w-6 h-0.5 bg-current mb-1"></span>
@@ -34,24 +32,23 @@
             </button>
         </nav>
 
-     
         <div class="mobile-menu absolute w-full bg-gray-900/95 backdrop-blur-sm md:hidden">
             <div class="container mx-auto px-6 py-4 flex flex-col gap-4">
-                <a href="#about" class="text-gray-300 hover:text-teal-400 transition-colors" onclick="closeMenu()">Sobre</a>
-                <a href="#skills" class="text-gray-300 hover:text-teal-400 transition-colors" onclick="closeMenu()">Habilidades</a>
-                <a href="#projects" class="text-gray-300 hover:text-teal-400 transition-colors" onclick="closeMenu()">Projetos</a>
-                <a href="#contact" class="text-gray-300 hover:text-teal-400 transition-colors" onclick="closeMenu()">Contato</a>
+                <a href="#sobre" class="text-gray-300 hover:text-purple-400 transition-colors" onclick="closeMenu()">Sobre</a>
+                <a href="#tecnologia" class="text-gray-300 hover:text-purple-400 transition-colors" onclick="closeMenu()">Habilidades</a>
+                <a href="#experiencia" class="text-gray-300 hover:text-purple-400 transition-colors" onclick="closeMenu()">Experiência</a>
+                <a href="#projetos" class="text-gray-300 hover:text-purple-400 transition-colors" onclick="closeMenu()">Projetos</a>
+                <a href="#contato" class="text-gray-300 hover:text-purple-400 transition-colors" onclick="closeMenu()">Contato</a>
             </div>
         </div>
     </header>
 
     <main class="container mx-auto px-6 pt-24">
-   
-        <section id="about" class="flex flex-col md:flex-row items-center justify-between py-20" data-aos="fade-up">
+        <section id="sobre" class="flex flex-col md:flex-row items-center justify-between py-20" data-aos="fade-up">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h1 class="text-5xl font-bold mb-4 text-gray-100">
                     Ryan Bernardo
-                    <span class="block text-3xl mt-2 bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
+                    <span class="block text-3xl mt-2 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
                         Desenvolvedor FullStack
                     </span>
                 </h1>
@@ -59,74 +56,65 @@
                     Transformando ideias em soluções digitais performáticas e escaláveis
                 </p>
                 <div class="flex gap-4">
-                    <a href="#contact" class="bg-teal-600 hover:bg-teal-700 px-6 py-3 rounded-full transition-colors flex items-center gap-2">
+                    <a href="#contato" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors flex items-center gap-2">
                         <i class="fas fa-envelope"></i> Contato
                     </a>
-                    <a href="#projects" class="text-blue-400 border border-teal-600 hover:bg-teal-600/20 px-6 py-3 rounded-full transition-colors">
+                    <a href="#projetos" class="text-blue-400 border border-purple-600 hover:bg-purple-600/20 px-6 py-3 rounded-full transition-colors">
                         Ver Projetos
                     </a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
                 <img src="imagens/perfil.jpg" alt="Ryan" 
-                     class="rounded-full w-72 h-72 border-4 border-teal-500/30 shadow-2xl float-animation">
+                     class="rounded-full w-72 h-72 border-4 border-purple-500/30 shadow-2xl float-animation">
             </div>
         </section>
 
-   
-        <section id="skills" class="py-20" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">Tecnologias que Domino</h2>
+        <section id="experiencia" class="py-20" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">Tecnologias</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-              
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-react text-4xl text-[#61DAFB]"></i>
                     <h3 class="text-xl my-4 text-gray-100">React JS</h3>
                     <p class="text-gray-400 text-sm">Desenvolvimento de interfaces modernas e responsivas</p>
                 </div>
 
-               
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-java text-4xl text-[#007396]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Java Spring</h3>
                     <p class="text-gray-400 text-sm">APIs robustas e sistemas backend complexos</p>
                 </div>
 
-              
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-docker text-4xl text-[#2496ED]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Docker</h3>
                     <p class="text-gray-400 text-sm">Containerização e orquestração de aplicações</p>
                 </div>
 
-             
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fas fa-database text-4xl text-[#F29111]"></i>
                     <h3 class="text-xl my-4 text-gray-100">MySQL</h3>
                     <p class="text-gray-400 text-sm">Modelagem e gestão de bancos relacionais</p>
                 </div>
 
-        
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
-                    <i class="fab fa-css3-alt text-4xl text-[#38BDF8]"></i>
+                    <i class="fab fa-css3-alt text-4xl text-[#9333ea]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Tailwind CSS</h3>
                     <p class="text-gray-400 text-sm">Estilização moderna e responsiva</p>
                 </div>
 
-             
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-node-js text-4xl text-[#68A063]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Node.js</h3>
                     <p class="text-gray-400 text-sm">APIs RESTful e aplicações server-side</p>
                 </div>
 
-         
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-git-alt text-4xl text-[#F05032]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Git</h3>
                     <p class="text-gray-400 text-sm">Versionamento e controle de código</p>
                 </div>
 
-              
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-aws text-4xl text-[#FF9900]"></i>
                     <h3 class="text-xl my-4 text-gray-100">AWS</h3>
@@ -135,117 +123,119 @@
             </div>
         </section>
 
-
-      <section id="experience" class="py-20" data-aos="fade-up">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">
-                <span class="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
-                    Experiência Profissional
-                </span>
-            </h2>
-
-            <div class="max-w-4xl mx-auto space-y-8">
-           
-                <div class="relative pl-8 border-l-2 border-teal-500/30 group">
-                    <div class="absolute w-4 h-4 bg-teal-500 rounded-full -left-[9px] top-2 group-hover:bg-teal-400 transition-colors"></div>
-                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-700/30 transition-colors">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="p-3 bg-teal-500/10 rounded-lg">
-                                <i class="fa-solid fa-magnifying-glass-chart text-2xl text-teal-400"></i>
+        <section id="experience" class="py-20" data-aos="fade-up">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">
+                    <span class="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+                        Experiência Profissional
+                    </span>
+                </h2>
+        
+                <div class="max-w-4xl mx-auto space-y-8">
+               
+                    <div class="relative pl-8 border-l-2 border-purple-500/30 group">
+                        <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-[9px] top-2 group-hover:bg-purple-400 transition-colors"></div>
+                        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-700/30 transition-colors">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="p-3 bg-purple-500/10 rounded-lg">
+                                    <i class="fa-solid fa-magnifying-glass-chart text-2xl text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-100">Analista de Dados</h3>
+                                    <p class="text-purple-400">Tribunal Regional Eleitoral da Bahia</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-100">Analista de Dados</h3>
-                                <p class="text-teal-400">Tribunal Regional Eleitoral da Bahia</p>
+                            <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Mar 2025 - Presente
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Salvador, BA
+                                </span>
                             </div>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                                <li>Implementação de machine learning</li>
+                                <li>Automatização de processos</li>
+                                <li>Integração de inteligência artificial a processos.</li>
+                            </ul>
                         </div>
-                        <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
-                            <span class="flex items-center gap-2">
-                                <i class="fas fa-calendar-alt"></i>
-                                Mar 2025 - Presente
-                            </span>
-                            <span class="flex items-center gap-2">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Salvador, BA
-                            </span>
-                        </div>
-                        <ul class="list-disc pl-6 space-y-2 text-gray-300">
-                            <li>Implementação de machine learning</li>
-                            <li>Automatização de processos</li>
-                            <li>Integração de inteligência artificial a processos.</li>
-                        </ul>
                     </div>
-                </div>
-
-          
-                <div class="relative pl-8 border-l-2 border-teal-500/30 group">
-                    <div class="absolute w-4 h-4 bg-teal-500 rounded-full -left-[9px] top-2 group-hover:bg-teal-400 transition-colors"></div>
-                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-700/30 transition-colors">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="p-3 bg-teal-500/10 rounded-lg">
-                                <i class="fa-solid fa-code text-2xl text-teal-400"></i>
+        
+                   
+                    <div class="relative pl-8 border-l-2 border-purple-500/30 group">
+                        <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-[9px] top-2 group-hover:bg-purple-400 transition-colors"></div>
+                        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-700/30 transition-colors">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="p-3 bg-purple-500/10 rounded-lg">
+                                    <i class="fa-solid fa-code text-2xl text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-100">Desenvolvedor Fullstack</h3>
+                                    <p class="text-purple-400">Freelancer</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-100">Desenvolvedor Fullstack</h3>
-                                <p class="text-teal-400">Freelancer</p>
+                            <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Maio 2024 - Presente
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Remoto
+                                </span>
                             </div>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                                <li>Desenvolvimento e manutenção de sistemas web com Java Spring e React</li>
+                                <li>Integração com APIs RESTful</li>
+                                <li>Modelagem de banco de dados</li>
+                            </ul>
                         </div>
-                        <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
-                            <span class="flex items-center gap-2">
-                                <i class="fas fa-calendar-alt"></i>
-                                Maio 2024 - Presente
-                            </span>
-                            <span class="flex items-center gap-2">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Remoto
-                            </span>
-                        </div>
-                        <ul class="list-disc pl-6 space-y-2 text-gray-300">
-                            <li>Desenvolvimento e manutenção de sistemas web com Java Spring e React</li>
-                            <li>Integração com APIs RESTful</li>
-                            <li>Modelagem de banco de dados</li>
-                        </ul>
                     </div>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-teal-500/30 group">
-                    <div class="absolute w-4 h-4 bg-teal-500 rounded-full -left-[9px] top-2 group-hover:bg-teal-400 transition-colors"></div>
-                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-700/30 transition-colors">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="p-3 bg-teal-500/10 rounded-lg">
-                                <i class="fas fa-laptop-code text-2xl text-teal-400"></i>
+        
+                 
+                    <div class="relative pl-8 border-l-2 border-purple-500/30 group">
+                        <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-[9px] top-2 group-hover:bg-purple-400 transition-colors"></div>
+                        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-700/30 transition-colors">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="p-3 bg-purple-500/10 rounded-lg">
+                                    <i class="fas fa-laptop-code text-2xl text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-100">Desenvolvedor Fullstack</h3>
+                                    <p class="text-purple-400">Cimatec Jr</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-100">Desenvolvedor Fullstack</h3>
-                                <p class="text-teal-400">Cimatec Jr</p>
+                            <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Mar 2024 - Presente
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Salvador, BA
+                                </span>
                             </div>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                                <li>Desenvolvimento e manutenção de sistemas web com Java Spring e React</li>
+                                <li>Implementação de arquitetura de microsserviços</li>
+                                <li>Otimização de performance de aplicações</li>
+                            </ul>
                         </div>
-                        <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
-                            <span class="flex items-center gap-2">
-                                <i class="fas fa-calendar-alt"></i>
-                                Mar 2024 - Presente
-                            </span>
-                            <span class="flex items-center gap-2">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Salvador, BA
-                            </span>
-                        </div>
-                        <ul class="list-disc pl-6 space-y-2 text-gray-300">
-                            <li>Desenvolvimento e manutenção de sistemas web com Java Spring e React</li>
-                            <li>Implementação de arquitetura de microsserviços</li>
-                            <li>Otimização de performance de aplicações</li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    
-        <section id="projects" class="py-20" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">Projetos Recentes</h2>
+        <section id="projetos" class="py-20" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">
+                <span class="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+                    Projetos Recentes
+                </span>
+            </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
+        
              
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
@@ -257,13 +247,13 @@
                         <h3 class="text-xl font-bold mb-2 text-gray-100">Lava-Jato Software</h3>
                         <p class="text-gray-400 mb-4">Sistema web para gerenciamento de um lava jato com dashboard interativa integrado a um banco de dados.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-teal-600/20 text-teal-400 rounded-full text-sm">Java</span>
+                            <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Java</span>
                             <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
                             <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">MySQL</span>
                         </div>
                     </div>
                 </div>
-
+        
                 
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
@@ -277,11 +267,12 @@
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
                             <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">MySQL</span>
-                            <span class="px-3 py-1 bg-teal-600/20 text-teal-400 rounded-full text-sm">Java</span>
+                            <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Java</span>
                         </div>
                     </div>
                 </div>
-
+        
+          
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
                         <img src="./imagens/presence.png" 
@@ -292,14 +283,13 @@
                         <h3 class="text-xl font-bold mb-2 text-gray-100">Sistema de Monitoramento de Presença</h3>
                         <p class="text-gray-400 mb-4">Monitorador de presença integrado a um banco de dados e utilização de cookies e tokens.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-teal-600/20 text-teal-400 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">JavaScript</span>
                             <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Express</span>
                             <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">HandleBars</span>
                         </div>
                     </div>
                 </div>
-
-           
+        
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
                         <img src="" 
@@ -311,12 +301,12 @@
                         <p class="text-gray-600 mb-4">Manipulação de uma API pública, filtrando e organizando dados de futebol.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
-                            <span class="px-3 py-1 bg-red-600/20 text-yellow-400 rounded-full text-sm">API</span>
+                            <span class="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">API</span>
                         </div>
                     </div>
                 </div>
-
-          
+        
+         
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
                         <img src="./imagens/gerador ticket.png" 
@@ -327,14 +317,14 @@
                         <h3 class="text-xl font-bold mb-2 text-gray-100">Gerador de Ticket</h3>
                         <p class="text-gray-400 mb-4">Sistema de gerar ticket em tempo real na página.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-green-600/20 text-blue-400 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">HTML</span>
                             <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">JavaScript</span>
-                            <span class="px-3 py-1 bg-blue-600/20 text-teal-400 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">CSS</span>
                         </div>
                     </div>
                 </div>
-
-                
+        
+          
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
                         <img src="./imagens/Calculadora idade.png" 
@@ -347,74 +337,68 @@
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
                             <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">TypeScript</span>
-                            <span class="px-3 py-1 bg-blue-600/20 text-teal-400 rounded-full text-sm">Tailwind</span>
+                            <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Tailwind</span>
                         </div>
                     </div>
                 </div>
-
+        
             </div>
         </section>
-
-
-        <section id="contact" class="py-20" data-aos="fade-up">
+        
+        <section id="contato" class="py-20" data-aos="fade-up">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
                     <h2 class="text-3xl font-bold text-center mb-8 text-gray-100">
-                        <span class="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
+                        <span class="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
                             Entre em Contato
                         </span>
                     </h2>
                     
                     <form class="space-y-6" id="contactForm">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                     
                             <div class="relative">
                                 <input 
                                     type="text" 
                                     id="name" 
                                     required
-                                    class="w-full px-4 py-3 bg-gray-700 border-2 border-gray-600 rounded-lg focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30 outline-none transition-all text-gray-300 placeholder-gray-400"
+                                    class="w-full px-4 py-3 bg-gray-700 border-2 border-gray-600 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30 outline-none transition-all text-gray-300 placeholder-gray-400"
                                     placeholder="Nome completo"
                                 >
                                 <i class="fas fa-user absolute right-4 top-4 text-gray-400"></i>
                             </div>
 
-                           
                             <div class="relative">
                                 <input 
                                     type="email" 
                                     id="email" 
                                     required
-                                    class="w-full px-4 py-3 bg-gray-700 border-2 border-gray-600 rounded-lg focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30 outline-none transition-all text-gray-300 placeholder-gray-400"
+                                    class="w-full px-4 py-3 bg-gray-700 border-2 border-gray-600 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30 outline-none transition-all text-gray-300 placeholder-gray-400"
                                     placeholder="Email"
                                 >
                                 <i class="fas fa-envelope absolute right-4 top-4 text-gray-400"></i>
                             </div>
                         </div>
 
-              
                         <div class="relative">
                             <textarea 
                                 id="message" 
                                 rows="5" 
                                 required
-                                class="w-full px-4 py-3 bg-gray-700 border-2 border-gray-600 rounded-lg focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30 outline-none transition-all text-gray-300 placeholder-gray-400 resize-none"
+                                class="w-full px-4 py-3 bg-gray-700 border-2 border-gray-600 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30 outline-none transition-all text-gray-300 placeholder-gray-400 resize-none"
                                 placeholder="Sua mensagem"
                             ></textarea>
                             <i class="fas fa-comment-dots absolute right-4 top-4 text-gray-400"></i>
                         </div>
 
-                
                         <button 
                             type="submit"
-                            class="w-full py-3 bg-gradient-to-r from-teal-600 to-cyan-700 hover:from-teal-500 hover:to-cyan-600 rounded-lg font-semibold text-gray-100 transition-all hover:shadow-lg hover:shadow-teal-500/20"
+                            class="w-full py-3 bg-gradient-to-r from-purple-600 to-blue-700 hover:from-purple-500 hover:to-blue-600 rounded-lg font-semibold text-gray-100 transition-all hover:shadow-lg hover:shadow-purple-500/20"
                         >
                             Enviar Mensagem
                         </button>
                     </form>
 
-          
-                    <div id="successMessage" class="hidden mt-6 p-4 bg-teal-900/30 border border-teal-500 rounded-lg text-teal-300 text-center">
+                    <div id="successMessage" class="hidden mt-6 p-4 bg-purple-900/30 border border-purple-500 rounded-lg text-purple-300 text-center">
                         <i class="fas fa-check-circle text-2xl mb-2"></i>
                         <p class="font-semibold">Mensagem enviada com sucesso!</p>
                         <p class="text-sm">Retornarei seu contato em breve.</p>
@@ -427,13 +411,13 @@
     <footer class="bg-gray-900/80 backdrop-blur-sm py-12" data-aos="fade-up">
         <div class="container mx-auto px-6 text-center">
             <div class="flex justify-center gap-6 mb-8 text-3xl">
-                <a href="https://github.com/Ryaannsz" class="text-gray-400 hover:text-teal-400 transition-colors">
+                <a href="https://github.com/Ryaannsz" class="text-gray-400 hover:text-purple-400 transition-colors">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/ryaannsz/" class="text-gray-400 hover:text-teal-400 transition-colors">
+                <a href="https://www.linkedin.com/in/ryaannsz/" class="text-gray-400 hover:text-purple-400 transition-colors">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:ryancarvalho.ber@gmail.com" class="text-gray-400 hover:text-teal-400 transition-colors">
+                <a href="mailto:ryancarvalho.ber@gmail.com" class="text-gray-400 hover:text-purple-400 transition-colors">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>

@@ -6,9 +6,8 @@
 
 .bg-primary { background: #0f172a; }
 .bg-secondary { background: #1e293b; }
-.text-primary { color: #38bdf8; }
-.hover\:text-primary:hover { color: #7dd3fc; }
-
+.text-primary { color: #9333ea; }
+.hover\:text-primary:hover { color: #a855f7; }
 
 .mobile-menu {
     max-height: 0;
