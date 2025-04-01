@@ -7,46 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-        .float-animation { animation: float 4s ease-in-out infinite; }
-        
-        .bg-primary { background: #0f172a; }
-        .bg-secondary { background: #1e293b; }
-        .text-primary { color: #38bdf8; }
-        .hover\:text-primary:hover { color: #7dd3fc; }
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
-        /* Novos estilos para o menu mobile */
-        .mobile-menu {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        
-        .mobile-menu.open {
-            max-height: 500px;
-        }
-
-        .hamburger span {
-            transition: all 0.3s ease;
-        }
-
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -6px);
-        }
-        
-    </style>
 </head>
 <body class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 min-h-screen">
     <header class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-sm py-4 shadow-xl">
@@ -55,7 +17,7 @@
                 RYAN
             </span>
             
-            <!-- Menu Desktop -->
+            
             <div class="hidden md:flex gap-6 text-gray-300">
                 <a href="#about" class="hover:text-teal-400 transition-colors">Sobre</a>
                 <a href="#skills" class="hover:text-teal-400 transition-colors">Habilidades</a>
@@ -63,7 +25,7 @@
                 <a href="#contact" class="hover:text-teal-400 transition-colors">Contato</a>
             </div>
 
-            <!-- Hamburger Menu Mobile -->
+          
             <button class="hamburger md:hidden p-2 text-gray-300 hover:text-teal-400 transition-colors" 
                     onclick="toggleMenu()">
                 <span class="block w-6 h-0.5 bg-current mb-1"></span>
@@ -72,7 +34,7 @@
             </button>
         </nav>
 
-        <!-- Menu Mobile -->
+     
         <div class="mobile-menu absolute w-full bg-gray-900/95 backdrop-blur-sm md:hidden">
             <div class="container mx-auto px-6 py-4 flex flex-col gap-4">
                 <a href="#about" class="text-gray-300 hover:text-teal-400 transition-colors" onclick="closeMenu()">Sobre</a>
@@ -84,7 +46,7 @@
     </header>
 
     <main class="container mx-auto px-6 pt-24">
-        <!-- Seção Hero -->
+   
         <section id="about" class="flex flex-col md:flex-row items-center justify-between py-20" data-aos="fade-up">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h1 class="text-5xl font-bold mb-4 text-gray-100">
@@ -111,60 +73,60 @@
             </div>
         </section>
 
-        <!-- Habilidades -->
+   
         <section id="skills" class="py-20" data-aos="fade-up">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">Tecnologias que Domino</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- React -->
+              
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-react text-4xl text-[#61DAFB]"></i>
                     <h3 class="text-xl my-4 text-gray-100">React JS</h3>
                     <p class="text-gray-400 text-sm">Desenvolvimento de interfaces modernas e responsivas</p>
                 </div>
 
-                <!-- Java -->
+               
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-java text-4xl text-[#007396]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Java Spring</h3>
                     <p class="text-gray-400 text-sm">APIs robustas e sistemas backend complexos</p>
                 </div>
 
-                <!-- Docker -->
+              
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-docker text-4xl text-[#2496ED]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Docker</h3>
                     <p class="text-gray-400 text-sm">Containerização e orquestração de aplicações</p>
                 </div>
 
-                <!-- MySQL -->
+             
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fas fa-database text-4xl text-[#F29111]"></i>
                     <h3 class="text-xl my-4 text-gray-100">MySQL</h3>
                     <p class="text-gray-400 text-sm">Modelagem e gestão de bancos relacionais</p>
                 </div>
 
-                <!-- Tailwind -->
+        
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-css3-alt text-4xl text-[#38BDF8]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Tailwind CSS</h3>
                     <p class="text-gray-400 text-sm">Estilização moderna e responsiva</p>
                 </div>
 
-                <!-- Node.js -->
+             
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-node-js text-4xl text-[#68A063]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Node.js</h3>
                     <p class="text-gray-400 text-sm">APIs RESTful e aplicações server-side</p>
                 </div>
 
-                <!-- Git -->
+         
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-git-alt text-4xl text-[#F05032]"></i>
                     <h3 class="text-xl my-4 text-gray-100">Git</h3>
                     <p class="text-gray-400 text-sm">Versionamento e controle de código</p>
                 </div>
 
-                <!-- AWS -->
+              
                 <div class="skill-card p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
                     <i class="fab fa-aws text-4xl text-[#FF9900]"></i>
                     <h3 class="text-xl my-4 text-gray-100">AWS</h3>
@@ -173,7 +135,7 @@
             </div>
         </section>
 
-    <!-- Sessão de experiencia-->
+
       <section id="experience" class="py-20" data-aos="fade-up">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">
@@ -183,7 +145,7 @@
             </h2>
 
             <div class="max-w-4xl mx-auto space-y-8">
-                <!-- Experiência 1 -->
+           
                 <div class="relative pl-8 border-l-2 border-teal-500/30 group">
                     <div class="absolute w-4 h-4 bg-teal-500 rounded-full -left-[9px] top-2 group-hover:bg-teal-400 transition-colors"></div>
                     <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-700/30 transition-colors">
@@ -214,7 +176,7 @@
                     </div>
                 </div>
 
-                <!-- Experiência 2 -->
+          
                 <div class="relative pl-8 border-l-2 border-teal-500/30 group">
                     <div class="absolute w-4 h-4 bg-teal-500 rounded-full -left-[9px] top-2 group-hover:bg-teal-400 transition-colors"></div>
                     <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-700/30 transition-colors">
@@ -245,7 +207,6 @@
                     </div>
                 </div>
 
-                <!-- Experiência 3 -->
                 <div class="relative pl-8 border-l-2 border-teal-500/30 group">
                     <div class="absolute w-4 h-4 bg-teal-500 rounded-full -left-[9px] top-2 group-hover:bg-teal-400 transition-colors"></div>
                     <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-gray-700/30 transition-colors">
@@ -280,21 +241,21 @@
     </section>
 
 
-        <!-- Projetos -->
+    
         <section id="projects" class="py-20" data-aos="fade-up">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">Projetos Recentes</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Projeto 1 -->
+             
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
-                        <img src="https://source.unsplash.com/random/800x600?code,chat" 
+                        <img src="./imagens/carwash.png" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 text-gray-100">Lava-Jato Software</h3>
-                        <p class="text-gray-400 mb-4">Sistema web para gerenciamento de um lava jato com dashboard interativa com os dados.</p>
+                        <p class="text-gray-400 mb-4">Sistema web para gerenciamento de um lava jato com dashboard interativa integrado a um banco de dados.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-teal-600/20 text-teal-400 rounded-full text-sm">Java</span>
                             <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
@@ -303,16 +264,16 @@
                     </div>
                 </div>
 
-                <!-- Projeto 2 -->
+                
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
-                        <img src="https://source.unsplash.com/random/800x600?ecommerce" 
+                        <img src="./imagens/controle estoque.png" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 text-gray-100">Gerenciamento de Vendas</h3>
-                        <p class="text-gray-400 mb-4">Sistema de gerenciamento de estoque e de vendas de uma loja de roupas masculinas.</p>
+                        <p class="text-gray-400 mb-4">Sistema de gerenciamento de estoque e de vendas de uma loja de roupas masculinas integrado a um banco de dados.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
                             <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">MySQL</span>
@@ -321,28 +282,27 @@
                     </div>
                 </div>
 
-                <!-- Projeto 3 -->
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
-                        <img src="https://source.unsplash.com/random/800x600?dashboard" 
+                        <img src="./imagens/presence.png" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-100">Sistema de Monitoramento</h3>
-                        <p class="text-gray-400 mb-4">Dashboard de métricas em tempo real</p>
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Sistema de Monitoramento de Presença</h3>
+                        <p class="text-gray-400 mb-4">Monitorador de presença integrado a um banco de dados e utilização de cookies e tokens.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
-                            <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Spring Boot</span>
-                            <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">Docker</span>
+                            <span class="px-3 py-1 bg-teal-600/20 text-teal-400 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Express</span>
+                            <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">HandleBars</span>
                         </div>
                     </div>
                 </div>
 
-                <!--Projeto 4-->
+           
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
-                        <img src="https://source.unsplash.com/random/800x600?ecommerce" 
+                        <img src="" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                     </div>
@@ -356,10 +316,10 @@
                     </div>
                 </div>
 
-                <!--Projeto 5-->
+          
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
-                        <img src="https://source.unsplash.com/random/800x600?ecommerce" 
+                        <img src="./imagens/gerador ticket.png" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                     </div>
@@ -374,10 +334,10 @@
                     </div>
                 </div>
 
-                <!--Projeto 6-->
+                
                 <div class="project-card bg-gray-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
                     <div class="relative h-48">
-                        <img src="https://source.unsplash.com/random/800x600?ecommerce" 
+                        <img src="./imagens/Calculadora idade.png" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                     </div>
@@ -395,7 +355,7 @@
             </div>
         </section>
 
-        <!-- Seção de Contato -->
+
         <section id="contact" class="py-20" data-aos="fade-up">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
@@ -407,7 +367,7 @@
                     
                     <form class="space-y-6" id="contactForm">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- Nome -->
+                     
                             <div class="relative">
                                 <input 
                                     type="text" 
@@ -419,7 +379,7 @@
                                 <i class="fas fa-user absolute right-4 top-4 text-gray-400"></i>
                             </div>
 
-                            <!-- Email -->
+                           
                             <div class="relative">
                                 <input 
                                     type="email" 
@@ -432,7 +392,7 @@
                             </div>
                         </div>
 
-                        <!-- Mensagem -->
+              
                         <div class="relative">
                             <textarea 
                                 id="message" 
@@ -444,7 +404,7 @@
                             <i class="fas fa-comment-dots absolute right-4 top-4 text-gray-400"></i>
                         </div>
 
-                        <!-- Botão de Envio -->
+                
                         <button 
                             type="submit"
                             class="w-full py-3 bg-gradient-to-r from-teal-600 to-cyan-700 hover:from-teal-500 hover:to-cyan-600 rounded-lg font-semibold text-gray-100 transition-all hover:shadow-lg hover:shadow-teal-500/20"
@@ -453,7 +413,7 @@
                         </button>
                     </form>
 
-                    <!-- Mensagem de Sucesso (Oculto) -->
+          
                     <div id="successMessage" class="hidden mt-6 p-4 bg-teal-900/30 border border-teal-500 rounded-lg text-teal-300 text-center">
                         <i class="fas fa-check-circle text-2xl mb-2"></i>
                         <p class="font-semibold">Mensagem enviada com sucesso!</p>
@@ -485,72 +445,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Funções do menu mobile
-        function toggleMenu() {
-            const menu = document.querySelector('.mobile-menu');
-            const hamburger = document.querySelector('.hamburger');
-            menu.classList.toggle('open');
-            hamburger.classList.toggle('active');
-        }
-
-        function closeMenu() {
-            const menu = document.querySelector('.mobile-menu');
-            const hamburger = document.querySelector('.hamburger');
-            menu.classList.remove('open');
-            hamburger.classList.remove('active');
-        }
-
-        // Fechar menu ao clicar fora
-        document.addEventListener('click', (e) => {
-            const menu = document.querySelector('.mobile-menu');
-            const hamburger = document.querySelector('.hamburger');
-            
-            if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
-                menu.classList.remove('open');
-                hamburger.classList.remove('active');
-            }
-        });
-
-        // Inicializa animações ao rolar
-        AOS.init({
-            duration: 800,
-            once: true,
-            easing: 'ease-in-out-quad',
-        });
-
-        // Validação e Animação do Formulário
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simular envio
-            document.getElementById('successMessage').classList.remove('hidden');
-            this.reset();
-            
-            // Reset após 5 segundos
-            setTimeout(() => {
-                document.getElementById('successMessage').classList.add('hidden');
-            }, 5000);
-        });
-
-        // Anima labels ao focar
-        document.querySelectorAll('input, textarea').forEach(element => {
-            element.addEventListener('focus', () => {
-                const label = element.previousElementSibling;
-                if(label) {
-                    label.style.transform = 'translateY(-24px)';
-                    label.style.color = '#2dd4bf';
-                }
-            });
-
-            element.addEventListener('blur', () => {
-                const label = element.previousElementSibling;
-                if (label && !element.value) {
-                    label.style.transform = 'translateY(0)';
-                    label.style.color = '#9ca3af';
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
